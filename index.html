@@ -69,7 +69,9 @@ function reply() {
   const q = question.toLowerCase();
   let answer = "";
 
-  if (q.includes("latte")) {
+  if (["hi", "hello", "hey"].includes(q.replace(/[!?.,]/g, "").trim())) {
+  answer = "Hello! Welcome to Morning Bliss Café! How can I help you today?";
+} else if (q.includes("latte")) {
     answer = "Our latte costs $4.50.";
   } else if (q.includes("cappuccino")) {
     answer = "Our cappuccino costs $4.00.";
