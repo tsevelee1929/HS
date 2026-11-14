@@ -97,14 +97,18 @@ userLine.style.background = "#e3f2fd";
 userLine.style.padding = "12px";
 userLine.style.borderRadius = "10px";
 userLine.style.textAlign = "left";
-
+userLine.style.width = "fit-content";
+userLine.style.maxWidth = "75%";
+userLine.style.margin = "10px 0 10px auto";
 const botLine = document.createElement("p");
 botLine.textContent = "Assistant: " + answer;
 botLine.style.background = "#e8f5e9";
 botLine.style.padding = "12px";
 botLine.style.borderRadius = "10px";
 botLine.style.textAlign = "left";
-
+botLine.style.width = "fit-content";
+botLine.style.maxWidth = "75%";
+botLine.style.margin = "10px auto 10px 0";
 chat.append(userLine, botLine);
 input.value = "";
 }
