@@ -102,6 +102,13 @@ function reply() {
   q.includes("where")
 ) {
   answer = "We are located at 18 Holmes Ave, Toronto, ON, Canada.";
+} else if (
+  q.includes("wifi") ||
+  q.includes("wi-fi") ||
+  q.includes("internet")
+) {
+  answer = "Yes! We offer free Wi-Fi for our customers.";
+ 
   } else if (q.includes("human") || q.includes("staff")) {
     answer = "I can only provide basic information. Please contact our café staff directly for additional help.";
   } else {
