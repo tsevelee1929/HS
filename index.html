@@ -6,21 +6,121 @@
   <title>Morning Bliss Café</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f5e6d3;
-      color: #4b3025;
-      text-align: center;
-      padding: 30px;
-    }
-    h1 { color: #875332; }
-    .card {
-      background: white;
-      padding: 20px;
-      margin: 20px auto;
-      border-radius: 15px;
-      max-width: 500px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.12);
-    }
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f7efe4, #e9d6bf);
+  color: #49372c;
+  margin: 0;
+  padding: 25px 15px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+h1 {
+  color: #5d4037;
+  font-size: 38px;
+}
+
+h2 {
+  color: #6d4c41;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #fffdf9;
+  max-width: 650px;
+  margin: 25px auto;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(75, 48, 30, 0.12);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(75, 48, 30, 0.18);
+}
+
+.card p {
+  font-size: 17px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e5d6c7;
+  margin: 20px 0;
+}
+
+a {
+  color: #795548;
+  font-weight: bold;
+}
+
+#chat {
+  max-height: 350px;
+  overflow-y: auto;
+  overflow-wrap: anywhere;
+  text-align: left;
+  border-radius: 15px;
+}
+
+#chat p {
+  font-size: 15px;
+  line-height: 1.5;
+  box-sizing: border-box;
+  overflow-wrap: anywhere;
+}
+
+#question {
+  width: 65%;
+  max-width: 420px;
+  padding: 13px;
+  border: 2px solid #d7bda5;
+  border-radius: 10px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+#question:focus {
+  outline: none;
+  border-color: #795548;
+}
+
+button {
+  background: #795548 !important;
+  color: white;
+  padding: 13px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #5d4037 !important;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .card {
+    padding: 20px 15px;
+  }
+
+  #question {
+    width: 65%;
+  }
+
+  button {
+    padding: 12px;
+  }
   </style>
 </head>
 <body>
