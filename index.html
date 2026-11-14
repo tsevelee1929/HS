@@ -27,7 +27,7 @@
   <p>Start your day with happiness!</p>
 
   <div class="card">
-    <h2>Welcome to Our Café</h2>
+  
     <p>Fresh coffee, delicious pastries,
     and friendly customer service.</p>
   </div>
@@ -42,7 +42,56 @@
 
   <div class="card">
     <h2>Customer Support</h2>
-    <p>Our virtual assistant is coming soon!</p>
+    <p>Hi! I'm the Morning Bliss Café virtual assistant.</p>
+<p>Ask me about our menu, prices, or opening hours.</p>
+
+<div id="chat" aria-live="polite" style="background:#f5eee8;padding:15px;border-radius:10px;text-align:left;margin:12px 0;">
+  Assistant: Hello! How can I help you today?
+</div>
+
+<input id="question" type="text" placeholder="Type your question..." aria-label="Your question" style="padding:10px;width:65%;">
+
+<button onclick="reply()" style="padding:10px;background:#795548;color:white;border:0;border-radius:6px;">
+Send
+</button>
+
+<script>
+function reply() {
+  const input = document.getElementById("question");
+  const question = input.value.trim();
+  if (!question) return;
+
+  const q = question.toLowerCase();
+  let answer = "";
+
+  if (q.includes("latte")) {
+    answer = "Our latte costs $4.50.";
+  } else if (q.includes("cappuccino")) {
+    answer = "Our cappuccino costs $4.00.";
+  } else if (q.includes("americano")) {
+    answer = "Our Americano costs $3.50.";
+  } else if (q.includes("muffin")) {
+    answer = "Our blueberry muffin costs $3.00.";
+  } else if (q.includes("menu") || q.includes("price")) {
+    answer = "We offer latte ($4.50), cappuccino ($4.00), Americano ($3.50), and blueberry muffin ($3.00).";
+  } else if (q.includes("hour") || q.includes("open")) {
+    answer = "I'm sorry, our opening hours have not been confirmed yet.";
+  } else if (q.includes("human") || q.includes("staff")) {
+    answer = "I can only provide basic information. Please contact our café staff directly for additional help.";
+  } else {
+    answer = "I'm sorry, I don't have that information. Please contact our café staff for help.";
+  }
+
+  const chat = document.getElementById("chat");
+  const userLine = document.createElement("p");
+  userLine.textContent = "You: " + question;
+  const botLine = document.createElement("p");
+  botLine.textContent = "Assistant: " + answer;
+  chat.append(userLine, botLine);
+  input.value = "";
+}
+</script>
+
   </div>
 </body>
 </html>
