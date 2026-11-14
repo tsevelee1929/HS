@@ -54,7 +54,7 @@
   Assistant: Hello! How can I help you today?
 </div>
 
-<input id="question" type="text" placeholder="Type your question..." aria-label="Your question" style="padding:10px;width:65%;">
+<input id="question" type="text" placeholder="Type your question..." aria-label="Your question" style="padding:10px;width:65%;"onkeydown="if(event.key === 'Enter') reply()">
 
 <button onclick="reply()" style="padding:10px;background:#795548;color:white;border:0;border-radius:6px;">
 Send
