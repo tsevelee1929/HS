@@ -90,12 +90,23 @@ function reply() {
   }
 
   const chat = document.getElementById("chat");
-  const userLine = document.createElement("p");
-  userLine.textContent = "You: " + question;
-  const botLine = document.createElement("p");
-  botLine.textContent = "Assistant: " + answer;
-  chat.append(userLine, botLine);
-  input.value = "";
+
+const userLine = document.createElement("p");
+userLine.textContent = "You: " + question;
+userLine.style.background = "#e3f2fd";
+userLine.style.padding = "12px";
+userLine.style.borderRadius = "10px";
+userLine.style.textAlign = "left";
+
+const botLine = document.createElement("p");
+botLine.textContent = "Assistant: " + answer;
+botLine.style.background = "#e8f5e9";
+botLine.style.padding = "12px";
+botLine.style.borderRadius = "10px";
+botLine.style.textAlign = "left";
+
+chat.append(userLine, botLine);
+input.value = "";
 }
 </script>
 
