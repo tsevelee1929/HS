@@ -96,6 +96,12 @@ function reply() {
     answer = "We offer latte ($4.50), cappuccino ($4.00), Americano ($3.50), and blueberry muffin ($3.00).";
   } else if (q.includes("hour") || q.includes("open")) {
     answer = "We are open Monday to Friday from 8:00 AM to 8:00 PM, Saturday from 9:00 AM to 6:00 PM, and closed on Sunday.";
+ } else if (
+  q.includes("address") ||
+  q.includes("location") ||
+  q.includes("where")
+) {
+  answer = "We are located at 18 Holmes Ave, Toronto, ON, Canada.";
   } else if (q.includes("human") || q.includes("staff")) {
     answer = "I can only provide basic information. Please contact our café staff directly for additional help.";
   } else {
