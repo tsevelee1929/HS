@@ -1,374 +1,374 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Morning Bliss Café</title>
-  <style>
-    body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #f7efe4, #e9d6bf);
-  color: #49372c;
-  margin: 0;
-  padding: 25px 15px;
-  text-align: center;
-  line-height: 1.6;
-}
-
-h1 {
-  color: #5d4037;
-  font-size: 38px;
-}
-
-h2 {
-  color: #6d4c41;
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-.card {
-  background: #fffdf9;
-  max-width: 650px;
-  margin: 25px auto;
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 8px 25px rgba(75, 48, 30, 0.12);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(75, 48, 30, 0.18);
-}
-
-.card p {
-  font-size: 17px;
-}
-
-hr {
-  border: none;
-  border-top: 1px solid #e5d6c7;
-  margin: 20px 0;
-}
-
-a {
-  color: #795548;
-  font-weight: bold;
-}
-
-#chat {
-  max-height: 350px;
-  overflow-y: auto;
-  overflow-wrap: anywhere;
-  text-align: left;
-  border-radius: 15px;
-}
-
-#chat p {
-  font-size: 15px;
-  line-height: 1.5;
-  box-sizing: border-box;
-  overflow-wrap: anywhere;
-}
-
-#question {
-  width: 65%;
-  max-width: 420px;
-  padding: 13px;
-  border: 2px solid #d7bda5;
-  border-radius: 10px;
-  font-size: 15px;
-  box-sizing: border-box;
-}
-
-#question:focus {
-  outline: none;
-  border-color: #795548;
-}
-
-button {
-  background: #795548 !important;
-  color: white;
-  padding: 13px 20px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 15px;
-  transition: background 0.3s;
-}
-
-button:hover {
-  background: #5d4037 !important;
-}
-
-@media (max-width: 600px) {
-  h1 {
-    font-size: 30px;
-  }
-
-  h2 {
-    font-size: 24px;
-  }
-
-  .card {
-    padding: 20px 15px;
-  }
-
-  #question {
-    width: 65%;
-  }
-
-  button {
-    padding: 12px;
-  }
- /* MODERN CAFE DESIGN */
-
-body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background: #d5e8f5;
-  color: #35251e;
-  line-height: 1.7;
-  padding: 30px 16px;
-}
-
-h1 {
-  font-size: clamp(34px, 6vw, 56px);
-  color: #39241b;
-  font-weight: 800;
-  letter-spacing: -1px;
-  margin-bottom: 8px;
-}
-
-h2 {
-  color: #573b2e;
-  font-size: 27px;
-  margin-bottom: 18px;
-}
-
-.card {
-  background: #ffffff;
-  max-width: 760px;
-  margin: 28px auto;
-  padding: 36px;
-  border-radius: 24px;
-  border: 1px solid #e9ded2;
-  box-shadow: 0 12px 35px rgba(55,35,20,0.09);
-}
-
-.card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 18px 42px rgba(55,35,20,0.14);
-}
-
-.card p {
-  font-size: 17px;
-}
-
-body > img {
-  display: block;
-  width: 100%;
-  max-width: 760px;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 24px;
-  margin: 28px auto;
-  box-shadow: 0 15px 35px rgba(55,35,20,0.15);
-}
-
-hr {
-  border: none;
-  border-top: 1px solid #eee2d6;
-  margin: 18px 0;
-}
-
-a {
-  color: #95643e;
-  font-weight: 600;
-}
-
-#chat {
-  background: #faf5ef !important;
-  border: 1px solid #eadccd;
-  border-radius: 18px;
-  padding: 18px !important;
-  max-height: 380px;
-  overflow-y: auto;
-}
-
-#question {
-  width: 68%;
-  max-width: 450px;
-  border: 1px solid #cdb8a6;
-  border-radius: 12px;
-  padding: 14px;
-  font-size: 16px;
-}
-
-#question:focus {
-  border-color: #825338;
-  outline: 2px solid #ead8c7;
-}
-
-button {
-  background: #69432f !important;
-  color: white !important;
-  padding: 14px 22px;
-  border: none;
-  border-radius: 12px;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #40291e !important;
-}
-
-@media (max-width: 600px) {
-  body {
-    padding: 20px 12px;
-  }
-
-  .card {
-    padding: 24px 18px;
-    margin: 20px auto;
-  }
-
-  body > img {
-    height: 290px;
-    border-radius: 18px;
-  }
-
-  h2 {
-    font-size: 24px;
-  }
-
-  #question {
-    width: 65%;
-  }
-
-  button {
-    padding: 12px;
-  }
-}
-  </style>
-</head>
-<body>
-  <h1>☕ Morning Bliss Café</h1>
-  <p>Start your day with happiness!</p>
-  <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800" alt="Fresh coffee" style="width:100%; max-width:500px; border-radius:15px; margin-top:20px;">
-
-  <div class="card">
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Morning Bliss Café</title>  
+  <style>  
+    body {  
+  font-family: Arial, sans-serif;  
+  background: linear-gradient(135deg, #f7efe4, #e9d6bf);  
+  color: #49372c;  
+  margin: 0;  
+  padding: 25px 15px;  
+  text-align: center;  
+  line-height: 1.6;  
+}  
   
-    <p>Fresh coffee, delicious pastries,
-    and friendly customer service.</p>
-  </div>
-
-  <div class="card">
-    <h2>☕ Our Menu</h2>
-<p>☕ Latte — <strong>$4.50</strong></p>
-<hr>
-<p>☕ Cappuccino — <strong>$4.00</strong></p>
-<hr>
-<p>☕ Americano — <strong>$3.50</strong></p>
-<hr>
-<p>🧁 Blueberry Muffin — <strong>$3.00</strong></p>
-  </div>
-<div class="card">
-  <h2>📍 Our Location</h2>
-  <p>18 Holmes Ave, Toronto, ON, Canada</p>
-  <a href="https://www.google.com/maps/search/?api=1&query=18+Holmes+Ave+Toronto+ON"
-     target="_blank" rel="noopener noreferrer">
-    📍 View on Google Maps
-  </a>
-</div>
-  <div class="card">
-  <h2>🕒 Opening Hours</h2>
-  <p>Monday – Friday: 8:00 AM – 8:00 PM</p>
-  <p>Saturday: 9:00 AM – 6:00 PM</p>
-  <p>Sunday: Closed</p>
-</div>
-  <div class="card">
-    <h2>Customer Support</h2>
-    <p>Hi! I'm the Morning Bliss Café virtual assistant.</p>
-<p>Ask me about our menu, prices, or opening hours.</p>
-
-<div id="chat" aria-live="polite" style="background:#f5eee8;padding:15px;border-radius:10px;text-align:left;margin:12px 0;">
-  Assistant: Hello! How can I help you today?
-</div>
-
-<input id="question" type="text" placeholder="Type your question..." aria-label="Your question" style="padding:10px;width:65%;"onkeydown="if(event.key === 'Enter') reply()">
-
-<button onclick="reply()" style="padding:10px;background:#795548;color:white;border:0;border-radius:6px;">
-Send
-</button>
-
-<script>
-function reply() {
-  const input = document.getElementById("question");
-  const question = input.value.trim();
-  if (!question) return;
-
-  const q = question.toLowerCase();
-  let answer = "";
-
-  if (["hi", "hello", "hey"].includes(q.replace(/[!?.,]/g, "").trim())) {
-  answer = "Hello! Welcome to Morning Bliss Café! How can I help you today?";
-} else if (q.includes("latte")) {
-    answer = "Our latte costs $4.50.";
-  } else if (q.includes("cappuccino")) {
-    answer = "Our cappuccino costs $4.00.";
-  } else if (q.includes("americano")) {
-    answer = "Our Americano costs $3.50.";
-  } else if (q.includes("muffin")) {
-    answer = "Our blueberry muffin costs $3.00.";
-  } else if (q.includes("menu") || q.includes("price")) {
-    answer = "We offer latte ($4.50), cappuccino ($4.00), Americano ($3.50), and blueberry muffin ($3.00).";
-  } else if (q.includes("hour") || q.includes("open")) {
-    answer = "We are open Monday to Friday from 8:00 AM to 8:00 PM, Saturday from 9:00 AM to 6:00 PM, and closed on Sunday.";
- } else if (
-  q.includes("address") ||
-  q.includes("location") ||
-  q.includes("where")
-) {
-  answer = "We are located at 18 Holmes Ave, Toronto, ON, Canada.";
-} else if (
-  q.includes("wifi") ||
-  q.includes("wi-fi") ||
-  q.includes("internet")
-) {
-  answer = "Yes! We offer free Wi-Fi for our customers.";
- 
-  } else if (q.includes("human") || q.includes("staff")) {
-    answer = "I can only provide basic information. Please contact our café staff directly for additional help.";
-  } else {
-    answer = "I'm sorry, I don't have that information. Please contact our café staff for help.";
-  }
-
-  const chat = document.getElementById("chat");
-
-const userLine = document.createElement("p");
-userLine.textContent = "You: " + question;
-userLine.style.background = "#e3f2fd";
-userLine.style.padding = "12px";
-userLine.style.borderRadius = "10px";
-userLine.style.textAlign = "left";
-userLine.style.width = "fit-content";
-userLine.style.maxWidth = "75%";
-userLine.style.margin = "10px 0 10px auto";
-const botLine = document.createElement("p");
-botLine.textContent = "Assistant: " + answer;
-botLine.style.background = "#e8f5e9";
-botLine.style.padding = "12px";
-botLine.style.borderRadius = "10px";
-botLine.style.textAlign = "left";
-botLine.style.width = "fit-content";
-botLine.style.maxWidth = "75%";
-botLine.style.margin = "10px auto 10px 0";
-chat.append(userLine, botLine);
-input.value = "";
-}
-</script>
-
-  </div>
-</body>
-</html>
+h1 {  
+  color: #5d4037;  
+  font-size: 38px;  
+}  
+  
+h2 {  
+  color: #6d4c41;  
+  font-size: 28px;  
+  margin-bottom: 20px;  
+}  
+  
+.card {  
+  background: #fffdf9;  
+  max-width: 650px;  
+  margin: 25px auto;  
+  padding: 30px;  
+  border-radius: 20px;  
+  box-shadow: 0 8px 25px rgba(75, 48, 30, 0.12);  
+  transition: transform 0.3s, box-shadow 0.3s;  
+}  
+  
+.card:hover {  
+  transform: translateY(-4px);  
+  box-shadow: 0 12px 30px rgba(75, 48, 30, 0.18);  
+}  
+  
+.card p {  
+  font-size: 17px;  
+}  
+  
+hr {  
+  border: none;  
+  border-top: 1px solid #e5d6c7;  
+  margin: 20px 0;  
+}  
+  
+a {  
+  color: #795548;  
+  font-weight: bold;  
+}  
+  
+#chat {  
+  max-height: 350px;  
+  overflow-y: auto;  
+  overflow-wrap: anywhere;  
+  text-align: left;  
+  border-radius: 15px;  
+}  
+  
+#chat p {  
+  font-size: 15px;  
+  line-height: 1.5;  
+  box-sizing: border-box;  
+  overflow-wrap: anywhere;  
+}  
+  
+#question {  
+  width: 65%;  
+  max-width: 420px;  
+  padding: 13px;  
+  border: 2px solid #d7bda5;  
+  border-radius: 10px;  
+  font-size: 15px;  
+  box-sizing: border-box;  
+}  
+  
+#question:focus {  
+  outline: none;  
+  border-color: #795548;  
+}  
+  
+button {  
+  background: #795548 !important;  
+  color: white;  
+  padding: 13px 20px;  
+  border: none;  
+  border-radius: 10px;  
+  cursor: pointer;  
+  font-size: 15px;  
+  transition: background 0.3s;  
+}  
+  
+button:hover {  
+  background: #5d4037 !important;  
+}  
+  
+@media (max-width: 600px) {  
+  h1 {  
+    font-size: 30px;  
+  }  
+  
+  h2 {  
+    font-size: 24px;  
+  }  
+  
+  .card {  
+    padding: 20px 15px;  
+  }  
+  
+  #question {  
+    width: 65%;  
+  }  
+  
+  button {  
+    padding: 12px;  
+  }  
+ /* MODERN CAFE DESIGN */  
+  
+body {  
+  font-family: 'Segoe UI', Arial, sans-serif;  
+  background: #d5e8f5;  
+  color: #35251e;  
+  line-height: 1.7;  
+  padding: 30px 16px;  
+}  
+  
+h1 {  
+  font-size: clamp(34px, 6vw, 56px);  
+  color: #39241b;  
+  font-weight: 800;  
+  letter-spacing: -1px;  
+  margin-bottom: 8px;  
+}  
+  
+h2 {  
+  color: #573b2e;  
+  font-size: 27px;  
+  margin-bottom: 18px;  
+}  
+  
+.card {  
+  background: #ffffff;  
+  max-width: 760px;  
+  margin: 28px auto;  
+  padding: 36px;  
+  border-radius: 24px;  
+  border: 1px solid #e9ded2;  
+  box-shadow: 0 12px 35px rgba(55,35,20,0.09);  
+}  
+  
+.card:hover {  
+  transform: translateY(-3px);  
+  box-shadow: 0 18px 42px rgba(55,35,20,0.14);  
+}  
+  
+.card p {  
+  font-size: 17px;  
+}  
+  
+body > img {  
+  display: block;  
+  width: 100%;  
+  max-width: 760px;  
+  height: 400px;  
+  object-fit: cover;  
+  border-radius: 24px;  
+  margin: 28px auto;  
+  box-shadow: 0 15px 35px rgba(55,35,20,0.15);  
+}  
+  
+hr {  
+  border: none;  
+  border-top: 1px solid #eee2d6;  
+  margin: 18px 0;  
+}  
+  
+a {  
+  color: #95643e;  
+  font-weight: 600;  
+}  
+  
+#chat {  
+  background: #faf5ef !important;  
+  border: 1px solid #eadccd;  
+  border-radius: 18px;  
+  padding: 18px !important;  
+  max-height: 380px;  
+  overflow-y: auto;  
+}  
+  
+#question {  
+  width: 68%;  
+  max-width: 450px;  
+  border: 1px solid #cdb8a6;  
+  border-radius: 12px;  
+  padding: 14px;  
+  font-size: 16px;  
+}  
+  
+#question:focus {  
+  border-color: #825338;  
+  outline: 2px solid #ead8c7;  
+}  
+  
+button {  
+  background: #69432f !important;  
+  color: white !important;  
+  padding: 14px 22px;  
+  border: none;  
+  border-radius: 12px;  
+  font-weight: 600;  
+  cursor: pointer;  
+}  
+  
+button:hover {  
+  background: #40291e !important;  
+}  
+  
+@media (max-width: 600px) {  
+  body {  
+    padding: 20px 12px;  
+  }  
+  
+  .card {  
+    padding: 24px 18px;  
+    margin: 20px auto;  
+  }  
+  
+  body > img {  
+    height: 290px;  
+    border-radius: 18px;  
+  }  
+  
+  h2 {  
+    font-size: 24px;  
+  }  
+  
+  #question {  
+    width: 65%;  
+  }  
+  
+  button {  
+    padding: 12px;  
+  }  
+}  
+  </style>  
+</head>  
+<body>  
+  <h1>☕ Morning Bliss Café</h1>  
+  <p>Start your day with happiness!</p>  
+  <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800" alt="Fresh coffee" style="width:100%; max-width:500px; border-radius:15px; margin-top:20px;">  
+  
+  <div class="card">  
+    
+    <p>Fresh coffee, delicious pastries,  
+    and friendly customer service.</p>  
+  </div>  
+  
+  <div class="card">  
+    <h2>☕ Our Menu</h2>  
+<p>☕ Latte — <strong>$4.50</strong></p>  
+<hr>  
+<p>☕ Cappuccino — <strong>$4.00</strong></p>  
+<hr>  
+<p>☕ Americano — <strong>$3.50</strong></p>  
+<hr>  
+<p>🧁 Blueberry Muffin — <strong>$3.00</strong></p>  
+  </div>  
+<div class="card">  
+  <h2>📍 Our Location</h2>  
+  <p>18 Holmes Ave, Toronto, ON, Canada</p>  
+  <a href="https://www.google.com/maps/search/?api=1&query=18+Holmes+Ave+Toronto+ON"  
+     target="_blank" rel="noopener noreferrer">  
+    📍 View on Google Maps  
+  </a>  
+</div>  
+  <div class="card">  
+  <h2>🕒 Opening Hours</h2>  
+  <p>Monday – Friday: 8:00 AM – 8:00 PM</p>  
+  <p>Saturday: 9:00 AM – 6:00 PM</p>  
+  <p>Sunday: Closed</p>  
+</div>  
+  <div class="card">  
+    <h2>Customer Support</h2>  
+    <p>Hi! I'm the Morning Bliss Café virtual assistant.</p>  
+<p>Ask me about our menu, prices, or opening hours.</p>  
+  
+<div id="chat" aria-live="polite" style="background:#f5eee8;padding:15px;border-radius:10px;text-align:left;margin:12px 0;">  
+  Assistant: Hello! How can I help you today?  
+</div>  
+  
+<input id="question" type="text" placeholder="Type your question..." aria-label="Your question" style="padding:10px;width:65%;"onkeydown="if(event.key === 'Enter') reply()">  
+  
+<button onclick="reply()" style="padding:10px;background:#795548;color:white;border:0;border-radius:6px;">  
+Send  
+</button>  
+  
+<script>  
+function reply() {  
+  const input = document.getElementById("question");  
+  const question = input.value.trim();  
+  if (!question) return;  
+  
+  const q = question.toLowerCase();  
+  let answer = "";  
+  
+  if (["hi", "hello", "hey"].includes(q.replace(/[!?.,]/g, "").trim())) {  
+  answer = "Hello! Welcome to Morning Bliss Café! How can I help you today?";  
+} else if (q.includes("latte")) {  
+    answer = "Our latte costs $4.50.";  
+  } else if (q.includes("cappuccino")) {  
+    answer = "Our cappuccino costs $4.00.";  
+  } else if (q.includes("americano")) {  
+    answer = "Our Americano costs $3.50.";  
+  } else if (q.includes("muffin")) {  
+    answer = "Our blueberry muffin costs $3.00.";  
+  } else if (q.includes("menu") || q.includes("price")) {  
+    answer = "We offer latte ($4.50), cappuccino ($4.00), Americano ($3.50), and blueberry muffin ($3.00).";  
+  } else if (q.includes("hour") || q.includes("open")) {  
+    answer = "We are open Monday to Friday from 8:00 AM to 8:00 PM, Saturday from 9:00 AM to 6:00 PM, and closed on Sunday.";  
+ } else if (  
+  q.includes("address") ||  
+  q.includes("location") ||  
+  q.includes("where")  
+) {  
+  answer = "We are located at 18 Holmes Ave, Toronto, ON, Canada.";  
+} else if (  
+  q.includes("wifi") ||  
+  q.includes("wi-fi") ||  
+  q.includes("internet")  
+) {  
+  answer = "Yes! We offer free Wi-Fi for our customers.";  
+   
+  } else if (q.includes("human") || q.includes("staff")) {  
+    answer = "I can only provide basic information. Please contact our café staff directly for additional help.";  
+  } else {  
+    answer = "I'm sorry, I don't have that information. Please contact our café staff for help.";  
+  }  
+  
+  const chat = document.getElementById("chat");  
+  
+const userLine = document.createElement("p");  
+userLine.textContent = "You: " + question;  
+userLine.style.background = "#e3f2fd";  
+userLine.style.padding = "12px";  
+userLine.style.borderRadius = "10px";  
+userLine.style.textAlign = "left";  
+userLine.style.width = "fit-content";  
+userLine.style.maxWidth = "75%";  
+userLine.style.margin = "10px 0 10px auto";  
+const botLine = document.createElement("p");  
+botLine.textContent = "Assistant: " + answer;  
+botLine.style.background = "#e8f5e9";  
+botLine.style.padding = "12px";  
+botLine.style.borderRadius = "10px";  
+botLine.style.textAlign = "left";  
+botLine.style.width = "fit-content";  
+botLine.style.maxWidth = "75%";  
+botLine.style.margin = "10px auto 10px 0";  
+chat.append(userLine, botLine);  
+input.value = "";  
+}  
+</script>  
+  
+  </div>  
+</body>  
+</html>  
